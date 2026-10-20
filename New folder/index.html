@@ -1,0 +1,1611 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Cartoon Story Studio | SuZu DreamToon AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="assets/images/SuZu_favi_icon.png">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top neon-navbar glass-navbar">
+
+  <div class="nav-beam" aria-hidden="true"></div>
+  <div class="nav-scroll-progress" id="navScrollProgress" aria-hidden="true"></div>
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand neon-brand d-flex align-items-center gap-2 fw-bold" href="./index.html">
+      <span class="logo-ring">
+        <img src="assets/images/suzu_main_logo.png" alt="SuZu Logo" width="40" height="40" class="logo-bounce">
+      </span>
+      <span class="brand-text">
+        <span class="su">SuZu</span>
+        <span class="dm">DreamToon</span>
+        <span class="ai">AI</span>
+      </span>
+    </a>
+
+    <div class="nav-live-pill d-none d-lg-flex" id="navLivePill" aria-live="polite">
+      <span class="nav-live-dot"></span>
+      <span id="navLiveText">Home</span>
+    </div>
+
+    <button class="navbar-toggler neon-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav neon-nav-center mx-lg-auto">
+
+        <li class="nav-item">
+          <a class="nav-link neon-nav-link" href="#home" data-section="home">
+            <i class="fa fa-home"></i><span>Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item neon-dropdown" data-nav="explore">
+          <button class="nav-link neon-nav-link neon-dropdown-toggle" type="button" aria-expanded="false">
+            <i class="fa fa-th"></i><span class="explore-label">Explore</span><span class="explore-current"></span><i class="fa fa-angle-down dropdown-arrow"></i>
+          </button>
+          <ul class="neon-dropdown-menu neon-dropdown-wide">
+            <li class="dropdown-label">Platform</li>
+            <li><a class="neon-dropdown-item" href="#about" data-section="about"><i class="fa fa-info-circle"></i> About</a></li>
+            <li><a class="neon-dropdown-item" href="#features" data-section="features"><i class="fa fa-th-large"></i> Features</a></li>
+            <li><a class="neon-dropdown-item" href="#workflow" data-section="workflow"><i class="fa fa-random"></i> Workflow</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-label">Studio</li>
+            <li><a class="neon-dropdown-item" href="#demo-stories" data-section="demo-stories"><i class="fa fa-book"></i> Demo Stories</a></li>
+            <li><a class="neon-dropdown-item" href="#emotion-audio" data-section="emotion-audio"><i class="fa fa-heart"></i> Emotion Audio</a></li>
+            <li><a class="neon-dropdown-item" href="#motion-preview" data-section="motion-preview"><i class="fa fa-video-camera"></i> Motion Preview</a></li>
+            <li><a class="neon-dropdown-item" href="#characters" data-section="characters"><i class="fa fa-users"></i> Characters</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-label">Community</li>
+            <li><a class="neon-dropdown-item" href="#blog" data-section="blog"><i class="fa fa-pencil"></i> Blog</a></li>
+            <li><a class="neon-dropdown-item" href="#testimonials" data-section="testimonials"><i class="fa fa-comment"></i> Testimonials</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="neon-dropdown-item" href="User_Dashboard/user-dashboard.html"><i class="fa fa-magic"></i> Creator Studio</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link neon-nav-link" href="#pricing" data-section="pricing">
+            <i class="fa fa-tag"></i><span>Pricing</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link neon-nav-link" href="#contact" data-section="contact">
+            <i class="fa fa-envelope"></i><span>Contact</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="neon-nav-actions ms-lg-2 mt-3 mt-lg-0">
+        <a href="login.html" class="btn-nav btn-nav-login">Login</a>
+        <a href="register.html" class="btn-nav btn-nav-signup">Sign Up</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!--1 HERO SECTION -->
+<div class="hero-glow glow-1"></div>
+<div class="hero-glow glow-2"></div>
+<div class="hero-grid-overlay" aria-hidden="true"></div>
+
+<section class="hero-section neon-animate" id="home">
+
+    <div class="hero-bg-gallery">
+        <img src="assets/images/hero_images/hero_section_img1 (1).jpg" alt="AI Cartoon Story">
+        <img src="assets/images/hero_images/hero_section_img1 (2).jpg" alt="AI Cartoon Story">
+        <img src="assets/images/hero_images/hero_section_img1 (3).jpg" alt="AI Cartoon Story">
+        <img src="assets/images/hero_images/hero_section_img1 (4).jpg" alt="AI Cartoon Story">
+        <img src="assets/images/hero_images/hero_section_img1 (5).jpg" alt="AI Cartoon Story">
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6 text-center text-lg-start hero-content">
+
+                <span class="hero-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    AI Cartoon Story Studio
+                </span>
+
+                <h1 class="hero-heading">
+                    Create <span class="hero-gradient-text">Complete Cartoon Stories</span> With AI
+                </h1>
+
+                <p class="hero-tagline">Emotion-Aware · Motion-Driven · Culturally Aligned</p>
+
+                <p class="lead">
+                    Generate stories, manage characters, produce halal DAF rhythm audio,
+                    and render motion-controlled animated scenes — all from one unified studio
+                    built for YouTube Shorts, TikTok, and Reels.
+                </p>
+
+                <div class="hero-pills">
+                    <span class="hero-pill"><i class="fa fa-bolt"></i> AI-Powered</span>
+                    <span class="hero-pill"><i class="fa fa-heart"></i> Emotion-Aware</span>
+                    <span class="hero-pill"><i class="fa fa-film"></i> Motion-Driven</span>
+                </div>
+
+                <div class="hero-buttons d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
+                    <a href="register.html" class="btn btn-hero-primary btn-lg">
+                        <i class="fa fa-magic"></i> Start Creating Free
+                    </a>
+                    <a href="#demo-stories" class="btn btn-hero-outline btn-lg">
+                        <i class="fa fa-play-circle"></i> Watch Demos
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="hero-flow-cards">
+
+                    <div class="flow-card card-1">
+                        <div class="card-content">
+                            <img src="assets/images/character life/hero.jpg" alt="Story Character">
+                        </div>
+                    </div>
+
+                    <div class="flow-card card-2">
+                        <div class="card-content">
+                            <img src="assets/images/character life/child.jpg" alt="Child Character">
+                        </div>
+                    </div>
+
+                    <div class="flow-card card-3">
+                        <div class="card-content">
+                            <img src="assets/images/character life/teacher.jpg" alt="Teacher Character">
+                        </div>
+                    </div>
+
+                    <div class="flow-card card-4">
+                        <div class="card-content">
+                            <img src="assets/images/character life/villian.jpg" alt="Villain Character">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Divider -->
+
+<!--2 ABOUT SECTION -->
+<section class="about-section neon-animate" id="about">
+
+<div class="section-bg-orb orb-1"></div>
+<div class="section-bg-orb orb-2"></div>
+
+<div class="container">
+
+    <div class="about-header text-center mb-5">
+        <span class="about-badge">About The Platform</span>
+        <h2 class="about-title">The Future of AI Cartoon Storytelling</h2>
+        <p class="about-subtitle">
+            Cartoon storytelling is exploding on YouTube Shorts, TikTok, and Instagram Reels —
+            yet most creators still juggle separate tools for writing, characters, audio, and animation.
+        </p>
+    </div>
+
+    <div class="about-bento about-bento-simple">
+
+        <div class="about-visual-card">
+            <div class="about-frame">
+                <div class="about-scan-line"></div>
+                <img src="assets/images/ABOUT/about.png" alt="SuZu DreamToon AI Platform" class="about-image">
+            </div>
+            <div class="about-visual-badge">
+                <i class="fa fa-check-circle"></i> Unified AI Studio
+            </div>
+        </div>
+
+        <div class="about-main-card">
+            <h3 class="about-heading">One Platform. Complete Cartoon Pipeline.</h3>
+            <p class="about-text">
+                AI Cartoon Story Studio combines story generation, character management,
+                emotion detection, halal DAF audio, and motion video — eliminating manual
+                effort across every stage of content creation.
+            </p>
+            <p class="about-text">
+                Our unique <strong>Emotion-Based Halal DAF Sound Engine</strong> generates background
+                audio using only DAF rhythm patterns, dynamically adjusted to emotional context.
+                Combined with motion-controlled AI video generation, the platform is AI-powered,
+                emotion-aware, motion-driven, and culturally aligned.
+            </p>
+            <!-- <div class="about-innovations">
+                <div class="innovation-chip chip-daf">
+                    <i class="fa fa-music"></i>
+                    <div>
+                        <strong>Halal DAF Sound Engine</strong>
+                        <span>Emotion-based rhythm patterns only</span>
+                    </div>
+                </div>
+                <div class="innovation-chip chip-motion">
+                    <i class="fa fa-video-camera"></i>
+                    <div>
+                        <strong>Motion Control Engine</strong>
+                        <span>AI camera, movement & transitions</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--3 FEATURES SECTION -->
+<section class="features-section neon-animate section-motion" id="features">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container features-wrap">
+
+        <div class="features-hero-row">
+            <div class="features-intro">
+                <h2 class="section-title">Feature Showcase</h2>
+                <p class="section-subtitle">Six Core Modules — One Unified Platform</p>
+                <p class="section-description">
+                    No existing platform combines AI storytelling, emotion detection, character and episode
+                    management, and DAF-based emotional audio generation. SuZu DreamToon AI fills that core gap
+                    with structured, reusable workflows for complete multimedia cartoon output.
+                </p>
+            </div>
+
+            <div class="feature-module story-module features-story-card">
+                <div class="feature-image">
+                    <img src="assets/images/features/feature story.png" alt="Story Generator">
+                    <div class="overlay-title">Story Engine</div>
+                </div>
+                <div class="feature-content">
+                    <h3>Story Engine</h3>
+                    <p>Generate complete cartoon stories from simple prompts with AI-powered narrative structuring and episodic organization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-network">
+
+            <div class="feature-module character-module">
+                <div class="feature-image">
+                    <img src="assets/images/features/feature character.png" alt="Character System">
+                    <div class="overlay-title">Character System</div>
+                </div>
+                <div class="feature-content">
+                    <h3>Character System</h3>
+                    <p>Manage AI-generated characters with unique personalities, reusable profiles, and structured episode progression.</p>
+                </div>
+            </div>
+
+            <div class="brain-core">
+                <div class="brain-circle">
+                    <div class="brain-inner">
+                        <img src="assets/images/features/feature brain.png" alt="AI Brain Core" class="brain-image">
+                    </div>
+                    <div class="brain-glow"></div>
+                    <div class="glow-ring ring-1"></div>
+                    <div class="glow-ring ring-2"></div>
+                </div>
+            </div>
+
+            <div class="feature-module emotion-module">
+                <div class="feature-image">
+                    <img src="assets/images/features/feature emotion.png" alt="Emotion Engine">
+                    <div class="overlay-title">Emotion Engine</div>
+                </div>
+                <div class="feature-content">
+                    <h3>Emotion Engine</h3>
+                    <p>Detect emotional tone in stories and scenes, then drive storytelling pipelines with real-time emotion intelligence.</p>
+                </div>
+            </div>
+
+            <div class="feature-module daf-module">
+                <div class="feature-image">
+                    <img src="assets/images/features/feature daf.png" alt="DAF Audio Engine">
+                    <div class="overlay-title">DAF Audio Engine</div>
+                </div>
+                <div class="feature-content">
+                    <h3>DAF Audio Engine</h3>
+                    <p>Convert detected emotions into halal DAF-only rhythm patterns — synchronized, ethical, and value-based background audio.</p>
+                </div>
+            </div>
+
+            <div class="feature-module motion-module">
+                <div class="feature-image">
+                    <img src="assets/images/features/feature motion.png" alt="Motion Video Engine">
+                    <div class="overlay-title">Motion Control Engine</div>
+                </div>
+                <div class="feature-content">
+                    <h3>Motion Control Video Engine</h3>
+                    <p>Animate cartoon scenes with character movement control, emotion-based motion speed, camera zoom, pan, tracking, and transitions.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--4 DEMO STORIES SECTION -->
+<section class="demo-stories-section neon-animate section-motion" id="demo-stories">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <span class="section-badge demo-badge">Sample Stories</span>
+            <h2 class="section-title">Demo Stories</h2>
+            <p class="section-subtitle">AI-Generated Cartoon Story Previews</p>
+            <p class="section-description">
+                Explore sample AI-generated cartoon stories — complete with characters,
+                emotional arcs, DAF rhythm audio, and motion-animated scenes ready for
+                YouTube Shorts, TikTok, and Instagram Reels.
+            </p>
+        </div>
+
+        <div class="demo-stories-grid reveal-stagger">
+
+            <article class="demo-story-card">
+                <div class="demo-story-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (1).jpg" alt="The Brave Little Explorer">
+                    <span class="demo-tag">Adventure</span>
+                </div>
+                <div class="demo-story-content">
+                    <h3>The Brave Little Explorer</h3>
+                    <p>A young hero discovers a hidden world and learns courage through friendship and discovery.</p>
+                    <div class="demo-meta">
+                        <span>🎭 4 Characters</span>
+                        <span>🎵 Happy DAF</span>
+                        <span>🎬 3 Episodes</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="demo-story-card featured">
+                <div class="demo-story-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (3).jpg" alt="The Magic Garden">
+                    <span class="demo-tag">Fantasy</span>
+                </div>
+                <div class="demo-story-content">
+                    <h3>The Magic Garden</h3>
+                    <p>When a curious child enters an enchanted garden, every plant tells a story of kindness and patience.</p>
+                    <div class="demo-meta">
+                        <span>🎭 5 Characters</span>
+                        <span>🎵 Calm DAF</span>
+                        <span>🎬 5 Episodes</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="demo-story-card">
+                <div class="demo-story-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (5).jpg" alt="Space Friends">
+                    <span class="demo-tag">Sci-Fi</span>
+                </div>
+                <div class="demo-story-content">
+                    <h3>Space Friends</h3>
+                    <p>Two unlikely companions travel the galaxy, solving problems with teamwork and creative thinking.</p>
+                    <div class="demo-meta">
+                        <span>🎭 3 Characters</span>
+                        <span>🎵 Excited DAF</span>
+                        <span>🎬 4 Episodes</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="demo-story-card">
+                <div class="demo-story-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (2).jpg" alt="The Wise Teacher">
+                    <span class="demo-tag">Educational</span>
+                </div>
+                <div class="demo-story-content">
+                    <h3>The Wise Teacher</h3>
+                    <p>An inspiring teacher uses animated lessons to help students understand values, science, and life skills.</p>
+                    <div class="demo-meta">
+                        <span>🎭 6 Characters</span>
+                        <span>🎵 Happy DAF</span>
+                        <span>🎬 6 Episodes</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--5 AI EMOTION → DAF RHYTHM ENGINE -->
+<section class="emotion-daf-section neon-animate section-motion" id="emotion-audio">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="emotion-grid">
+
+            <!-- Left -->
+            <div class="daf-left">
+                <span class="section-tag">Emotion Audio Preview</span>
+                <h2>Emotion-Based <span>Halal DAF</span> Sound Engine</h2>
+                <p>
+                    Instead of traditional multi-instrument music, our system generates background
+                    audio using only DAF rhythm patterns — dynamically adjusted according to
+                    emotional context. Listen to how each emotion transforms into synchronized,
+                    halal background audio in real time.
+                </p>
+                <div class="circular-glow-frame daf-image">
+                    <div class="glow-ring pulse-ring ring1"></div>
+                    <div class="glow-ring pulse-ring ring2"></div>
+                    <div class="glow-ring pulse-ring ring3"></div>
+                    <div class="glow-circle daf-image-inner">
+                        <img src="assets/images/daf.png" alt="DAF Drum">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center -->
+            <div class="circular-glow-frame emotion-core">
+                <div class="glow-ring core-ring one"></div>
+                <div class="glow-ring core-ring two"></div>
+                <div class="glow-ring core-ring three"></div>
+                <div class="glow-circle core-circle">
+                    <img src="assets/images/features/feature emotion.png" alt="AI Emotion Engine">
+                </div>
+                <p class="core-label">AI Emotion Engine</p>
+            </div>
+
+            <!-- Right -->
+            <div class="emotion-list">
+
+                <div class="emotion-card excited">
+                    <div class="emoji">🤩</div>
+                    <div class="content">
+                        <h4>Excited</h4>
+                        <p>Fast • Energetic Beat</p>
+                        <div class="wave excited-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="excited">▶</button>
+                    <audio id="excited"><source src="assets/sounds/mp3/excited.mp3"></audio>
+                </div>
+
+                <div class="emotion-card happy">
+                    <div class="emoji">😊</div>
+                    <div class="content">
+                        <h4>Happy</h4>
+                        <p>Cheerful • Bright Beat</p>
+                        <div class="wave happy-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="happy">▶</button>
+                    <audio id="happy"><source src="assets/sounds/mp3/happy.mp3"></audio>
+                </div>
+
+                <div class="emotion-card sad">
+                    <div class="emoji">😢</div>
+                    <div class="content">
+                        <h4>Sad</h4>
+                        <p>Slow • Deep Beat</p>
+                        <div class="wave sad-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="sad">▶</button>
+                    <audio id="sad"><source src="assets/sounds/mp3/sad.mp3"></audio>
+                </div>
+
+                <div class="emotion-card angry">
+                    <div class="emoji">😡</div>
+                    <div class="content">
+                        <h4>Angry</h4>
+                        <p>Strong • Powerful Beat</p>
+                        <div class="wave angry-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="angry">▶</button>
+                    <audio id="angry"><source src="assets/sounds/mp3/angry.mp3"></audio>
+                </div>
+
+                <div class="emotion-card suspense">
+                    <div class="emoji">😲</div>
+                    <div class="content">
+                        <h4>Suspense</h4>
+                        <p>Tense • Pulse Beat</p>
+                        <div class="wave suspense-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="suspense">▶</button>
+                    <audio id="suspense"><source src="assets/sounds/mp3/suspense.mp3"></audio>
+                </div>
+
+                <div class="emotion-card calm">
+                    <div class="emoji">😌</div>
+                    <div class="content">
+                        <h4>Calm</h4>
+                        <p>Soft • Relaxing Beat</p>
+                        <div class="wave calm-wave">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <button class="play-btn" data-audio="calm">▶</button>
+                    <audio id="calm"><source src="assets/sounds/mp3/calm.mp3"></audio>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--6 MOTION VIDEO PREVIEW SECTION -->
+<section class="motion-preview-section neon-animate section-motion" id="motion-preview">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <span class="section-badge motion-badge">Motion Control</span>
+            <h2 class="section-title">Motion Video Preview</h2>
+            <p class="section-subtitle">AI-Based Motion-Controlled Video Generation</p>
+            <p class="section-description">
+                Cartoon scenes are automatically animated using character movement control,
+                emotion-based motion speed, camera zoom, pan, and tracking — plus seamless
+                scene-to-scene transitions powered by AI.
+            </p>
+        </div>
+
+        <div class="motion-preview-grid reveal-stagger">
+
+            <div class="motion-feature-card">
+                <div class="motion-icon">🎬</div>
+                <h3>Character Movement</h3>
+                <p>AI controls character actions, gestures, and expressions frame by frame.</p>
+            </div>
+
+            <div class="motion-feature-card">
+                <div class="motion-icon">⚡</div>
+                <h3>Emotion-Based Speed</h3>
+                <p>Motion tempo adapts to detected emotions — fast for excitement, slow for calm.</p>
+            </div>
+
+            <div class="motion-feature-card">
+                <div class="motion-icon">📷</div>
+                <h3>Camera Control</h3>
+                <p>Automatic zoom, pan, and tracking shots create cinematic cartoon scenes.</p>
+            </div>
+
+            <div class="motion-feature-card">
+                <div class="motion-icon">🔄</div>
+                <h3>Scene Transitions</h3>
+                <p>Smooth transitions between scenes maintain narrative flow and visual continuity.</p>
+            </div>
+
+        </div>
+
+        <div class="motion-showcase mt-5">
+            <div class="motion-showcase-inner">
+                <img src="assets/images/WORKFLOW/MOTION.jpg" alt="Motion Video Preview">
+                <div class="motion-showcase-overlay">
+                    <span class="motion-live-badge">● AI Motion Preview</span>
+                    <p>Watch how AI transforms static cartoon frames into fully animated video sequences.</p>
+                    <a href="motion-video.html" class="btn btn-primary btn-lg">Create Motion Video</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!-- 7 WORKFLOW SECTION -->
+<section class="workflow-section neon-animate" id="workflow">
+
+    <div class="workflow-bg-orb wf-orb-1"></div>
+    <div class="workflow-bg-orb wf-orb-2"></div>
+    <div class="workflow-bg-orb wf-orb-3"></div>
+
+    <div class="container">
+
+        <div class="workflow-header text-center mb-5">
+            <span class="workflow-badge">Creation Pipeline</span>
+            <h2 class="workflow-title">AI Story Creation Workflow</h2>
+            <p class="workflow-subtitle">From Idea to Animated Cartoon — Structured & Reusable</p>
+        </div>
+
+        <div class="workflow-pipeline">
+
+            <!-- Animated energy beam -->
+            <div class="pipeline-track" aria-hidden="true">
+                <div class="pipeline-track-base"></div>
+                <div class="pipeline-track-flow"></div>
+                <div class="pipeline-track-pulse"></div>
+            </div>
+
+            <div class="workflow-nodes">
+
+                <article class="wf-node step-purple" data-step="1">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">01</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/idea.jpg" alt="Idea">
+                        </div>
+                        <h3 class="wf-title">Idea</h3>
+                        <p class="wf-desc">Your creative concept begins the AI storytelling pipeline</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-blue" data-step="2">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">02</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/story.jpg" alt="Story Generation">
+                        </div>
+                        <h3 class="wf-title">Story Generation</h3>
+                        <p class="wf-desc">Story Engine generates a full narrative with episode structure</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-teal" data-step="3">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">03</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/character.jpg" alt="Character Assignment">
+                        </div>
+                        <h3 class="wf-title">Character Assignment</h3>
+                        <p class="wf-desc">Character System assigns and manages story characters</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-green" data-step="4">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">04</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/emotion.jpg" alt="Emotion Detection">
+                        </div>
+                        <h3 class="wf-title">Emotion Detection</h3>
+                        <p class="wf-desc">Emotion Engine detects tone across every scene</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-orange" data-step="5">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">05</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/daf.jpg" alt="DAF Audio Creation">
+                        </div>
+                        <h3 class="wf-title">DAF Audio</h3>
+                        <p class="wf-desc">Halal DAF rhythms are generated from detected emotions</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-pink" data-step="6">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">06</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/MOTION.jpg" alt="Motion Video Generation">
+                        </div>
+                        <h3 class="wf-title">Motion Video</h3>
+                        <p class="wf-desc">Motion Engine animates scenes with camera and transitions</p>
+                    </div>
+                </article>
+
+                <article class="wf-node step-violet" data-step="7">
+                    <div class="wf-node-connector">
+                        <span class="wf-node-dot"></span>
+                        <span class="wf-node-pulse"></span>
+                    </div>
+                    <div class="wf-node-card">
+                        <div class="wf-card-glow"></div>
+                        <span class="wf-num">07</span>
+                        <div class="wf-icon-ring">
+                            <div class="wf-icon-orbit"></div>
+                            <img src="assets/images/WORKFLOW/FINAL.jpg" alt="Final Cartoon">
+                        </div>
+                        <h3 class="wf-title">Final Cartoon</h3>
+                        <p class="wf-desc">Complete cartoon video ready for social platforms</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Mobile swiper fallback -->
+        <div class="workflow-mobile-slider">
+            <div class="swiper workflow-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="wf-mobile-card step-purple"><span class="wf-num">01</span><img src="assets/images/WORKFLOW/idea.jpg" alt=""><h3>Idea</h3><p>Your creative concept begins the AI storytelling pipeline</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-blue"><span class="wf-num">02</span><img src="assets/images/WORKFLOW/story.jpg" alt=""><h3>Story Generation</h3><p>Story Engine generates a full narrative with episode structure</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-teal"><span class="wf-num">03</span><img src="assets/images/WORKFLOW/character.jpg" alt=""><h3>Character Assignment</h3><p>Character System assigns and manages story characters</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-green"><span class="wf-num">04</span><img src="assets/images/WORKFLOW/emotion.jpg" alt=""><h3>Emotion Detection</h3><p>Emotion Engine detects tone across every scene</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-orange"><span class="wf-num">05</span><img src="assets/images/WORKFLOW/daf.jpg" alt=""><h3>DAF Audio</h3><p>Halal DAF rhythms are generated from detected emotions</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-pink"><span class="wf-num">06</span><img src="assets/images/WORKFLOW/MOTION.jpg" alt=""><h3>Motion Video</h3><p>Motion Engine animates scenes with camera and transitions</p></div></div>
+                    <div class="swiper-slide"><div class="wf-mobile-card step-violet"><span class="wf-num">07</span><img src="assets/images/WORKFLOW/FINAL.jpg" alt=""><h3>Final Cartoon</h3><p>Complete cartoon video ready for social platforms</p></div></div>
+                </div>
+            </div>
+            <div class="swiper-pagination workflow-pagination"></div>
+        </div>
+
+        <div class="workflow-progress-display">
+            <div class="wf-progress-bar">
+                <div class="wf-progress-fill"></div>
+            </div>
+            <span class="wf-progress-label">Step <strong class="wf-current-num">01</strong> of 07</span>
+        </div>
+
+        <div class="workflow-footer-bar">
+            <span>AI-POWERED</span>
+            <span class="dot-sep">•</span>
+            <span>EMOTION-AWARE</span>
+            <span class="dot-sep">•</span>
+            <span>MOTION-DRIVEN</span>
+            <span class="dot-sep">•</span>
+            <span>CULTURALLY ALIGNED</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--6 CHARACTER SYSTEM SECTION -->
+<section class="character-section neon-animate" id="characters">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <span class="section-badge">Character System</span>
+            <h2 class="character-title">Integrated Character & Episode Management</h2>
+            <p>
+                Create, manage, and reuse AI-generated characters across episodic content.
+                Each character carries unique personalities, voice styles, emotions,
+                and structured story journeys that evolve across episodes.
+            </p>
+        </div>
+
+        <div class="character-grid">
+
+            <!-- HERO -->
+            <div class="character-card hero-card">
+                <img src="assets\images\character life\hero.jpg" alt="Hero Character">
+                <div class="card-overlay">
+                    <h3>Hero Character</h3>
+
+                    <div class="stats">
+                        <span>⚡ Brave</span>
+                        <span>🎤 Deep Voice</span>
+                        <span>😊 Positive</span>
+                    </div>
+
+                    <div class="timeline">
+                        Episode Progression
+                    </div>
+                </div>
+            </div>
+
+            <!-- VILLAIN -->
+            <div class="character-card villain-card">
+                <img src="assets\images\character life\villian.jpg" alt="Villain Character">
+                <div class="card-overlay">
+                    <h3>Villain Character</h3>
+
+                    <div class="stats">
+                        <span>🔥 Aggressive</span>
+                        <span>🎤 Dark Voice</span>
+                        <span>😈 Evil Emotion</span>
+                    </div>
+
+                    <div class="timeline">
+                        Episode Progression
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEACHER -->
+            <div class="character-card teacher-card">
+                <img src="assets\images\character life\teacher.jpg" alt="Teacher Character">
+                <div class="card-overlay">
+                    <h3>Teacher Character</h3>
+
+                    <div class="stats">
+                        <span>📚 Wise</span>
+                        <span>🎤 Calm Voice</span>
+                        <span>😊 Friendly</span>
+                    </div>
+
+                    <div class="timeline">
+                        Episode Progression
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHILD -->
+            <div class="character-card child-card">
+                <img src="assets\images\character life\child.jpg" alt="Child Character">
+                <div class="card-overlay">
+                    <h3>Child Character</h3>
+
+                    <div class="stats">
+                        <span>🎈 Playful</span>
+                        <span>🎤 Cute Voice</span>
+                        <span>😁 Happy</span>
+                    </div>
+
+                    <div class="timeline">
+                        Episode Progression
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--7 BLOG SECTION -->
+<section class="blog-section neon-animate" id="blog">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="blog-header text-center mb-5">
+
+            <span class="blog-badge">
+                AI Storytelling Tips
+            </span>
+
+            <h2>Learn The Future Of AI Cartoon Storytelling</h2>
+
+            <p>
+                Expert insights, tutorials, and creative guides on AI storytelling,
+                character design, emotion-aware animation, halal DAF audio generation,
+                and motion-controlled video creation.
+            </p>
+
+        </div>
+
+        <div class="blog-grid reveal-stagger">
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (3).jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">AI Storytelling</span>
+                    <h3>10 AI Storytelling Techniques For Better Cartoons</h3>
+                    <p>Learn how AI transforms simple prompts into structured, episodic cartoon narratives for social media platforms.</p>
+                    <a href="#" class="blog-link" data-bs-toggle="modal" data-bs-target="#blogModal" data-article="1">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="blog-card featured">
+                <div class="blog-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (5).jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Character Design</span>
+                    <h3>Creating Memorable AI Cartoon Characters</h3>
+                    <p>Build reusable character profiles with personality, emotion traits, and episode progression management.</p>
+                    <a href="#" class="blog-link" data-bs-toggle="modal" data-bs-target="#blogModal" data-article="2">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (7).jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Emotion AI</span>
+                    <h3>Emotion-Aware Storytelling Pipelines</h3>
+                    <p>Understand how emotion detection drives DAF rhythm generation and motion speed in animated scenes.</p>
+                    <a href="#" class="blog-link" data-bs-toggle="modal" data-bs-target="#blogModal" data-article="3">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero_images/hero_section_img1 (9).jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">DAF Audio</span>
+                    <h3>Halal DAF Audio Generation With AI</h3>
+                    <p>Discover how emotion-driven DAF-only rhythms create ethical, culturally aligned background audio for cartoons.</p>
+                    <a href="#" class="blog-link" data-bs-toggle="modal" data-bs-target="#blogModal" data-article="4">Read Article →</a>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--8 TESTIMONIALS SECTION -->
+<section class="testimonials-section neon-animate" id="testimonials">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="container">
+
+        <div class="testimonial-header text-center mb-5">
+
+            <span class="testimonial-badge">
+                User Feedback
+            </span>
+
+            <h2>Trusted By Story Creators Worldwide</h2>
+
+            <p>
+                Educators, content creators, storytellers, and parents use
+                AI Cartoon Story Studio to generate complete cartoon experiences —
+                from story writing and character design to halal DAF audio and motion video.
+            </p>
+
+        </div>
+
+        <div class="feedback-grid reveal-stagger">
+
+            <article class="feedback-card fb-orange">
+                <div class="feedback-quote"><i class="fa fa-quote-left"></i></div>
+                <div class="feedback-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="feedback-text">
+                    "I went from a blank page to a full 5-episode cartoon series in one afternoon.
+                    The story engine and character system are game-changers for my YouTube Shorts channel."
+                </p>
+                <div class="feedback-author">
+                    <div class="feedback-avatar ring-orange">
+                        <img src="assets/images/testinomial/sarah.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="feedback-info">
+                        <h4>Sarah Johnson</h4>
+                        <span>YouTube Story Creator</span>
+                        <span class="feedback-verified"><i class="fa fa-check-circle"></i> Verified Creator</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="feedback-card fb-purple featured">
+                <div class="feedback-top-badge">Top Review</div>
+                <div class="feedback-quote"><i class="fa fa-quote-left"></i></div>
+                <div class="feedback-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="feedback-text">
+                    "Motion-controlled video and emotion-based DAF rhythms feel like having a full
+                    animation studio. My TikTok cartoon shorts now get 3× more engagement."
+                </p>
+                <div class="feedback-author">
+                    <div class="feedback-avatar ring-purple">
+                        <img src="assets/images/testinomial/micheal.jpg" alt="Michael Lee">
+                    </div>
+                    <div class="feedback-info">
+                        <h4>Michael Lee</h4>
+                        <span>TikTok Content Creator</span>
+                        <span class="feedback-verified"><i class="fa fa-check-circle"></i> Verified Creator</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="feedback-card fb-green">
+                <div class="feedback-quote"><i class="fa fa-quote-left"></i></div>
+                <div class="feedback-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="feedback-text">
+                    "Episode management and character reuse let me build educational cartoon series
+                    my students actually look forward to. The halal DAF audio is a huge plus for our community."
+                </p>
+                <div class="feedback-author">
+                    <div class="feedback-avatar ring-green">
+                        <img src="assets/images/testinomial/enna.jpg" alt="Emma Carter">
+                    </div>
+                    <div class="feedback-info">
+                        <h4>Emma Carter</h4>
+                        <span>Educator & Teacher</span>
+                        <span class="feedback-verified"><i class="fa fa-check-circle"></i> Verified Creator</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="feedback-card fb-cyan">
+                <div class="feedback-quote"><i class="fa fa-quote-left"></i></div>
+                <div class="feedback-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p class="feedback-text">
+                    "As a parent, I love that stories are culturally aligned with halal DAF-only audio.
+                    My kids enjoy the cartoons and I feel confident about the content they watch."
+                </p>
+                <div class="feedback-author">
+                    <div class="feedback-avatar ring-cyan">
+                        <img src="assets/images/testinomial/david.jpg" alt="David Brown">
+                    </div>
+                    <div class="feedback-info">
+                        <h4>David Brown</h4>
+                        <span>Parent & Storyteller</span>
+                        <span class="feedback-verified"><i class="fa fa-check-circle"></i> Verified Creator</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!-- CTA SECTION -->
+<section class="cta-section neon-animate" id="cta">
+
+    <div class="section-bg-orb orb-1"></div>
+    <div class="section-bg-orb orb-2"></div>
+
+    <div class="cta-overlay"></div>
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span class="cta-badge">
+                Sign Up / Start Creating
+            </span>
+
+            <h2>
+                Turn Your Ideas Into Complete
+                AI Cartoon Stories
+            </h2>
+
+            <p>
+                Generate stories with AI, detect emotional tone, convert emotions into
+                halal DAF rhythm patterns, manage characters and episodes, and produce
+                motion-controlled animated videos — all in one unified platform.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="register.html?next=motion" class="cta-btn primary-btn">
+                    Sign Up Free
+                </a>
+
+                <a href="#demo-stories" class="cta-btn secondary-btn">
+                    View Demo Stories
+                </a>
+
+            </div>
+
+            <div class="cta-stats">
+
+                <div class="stat-box">
+                    <h3>10K+</h3>
+                    <span>Stories Generated</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>5K+</h3>
+                    <span>Happy Creators</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>99%</h3>
+                    <span>User Satisfaction</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!--10 PRICING SECTION -->
+
+<section class="pricing-section neon-animate" id="pricing">
+
+    <div class="pricing-bg-circle circle-1"></div>
+    <div class="pricing-bg-circle circle-2"></div>
+    <div class="pricing-bg-circle circle-3"></div>
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="pricing-header">
+
+            <span class="pricing-label">
+                FREE / PRO PLANS
+            </span>
+
+            <h2>
+                Choose Your
+                <span>Creative Plan</span>
+            </h2>
+
+            <p>
+                Start free with basic AI storytelling and character tools, or unlock
+                the full platform — emotion engine, halal DAF audio, motion video
+                generation, and premium creative features.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="pricing-grid reveal-stagger">
+
+            <!-- FREE  -->
+
+            <article class="pricing-card free-card">
+
+                <span class="border-light"></span>
+
+                <div class="card-content">
+
+                    <div class="plan-icon">
+                        🚀
+                    </div>
+
+                    <h3>Free Plan</h3>
+
+                    <p class="plan-duration">
+                        Beginner
+                    </p>
+
+                    <div class="price-box">
+
+                        <h1>$0</h1>
+
+                        <span>Forever Free</span>
+
+                    </div>
+
+                    <ul class="feature-list">
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            5 AI Stories Per Month
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Basic Character System
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Standard Emotion Engine
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Limited DAF Audio Preview
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Community Support
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="pricing-btn">
+                        Start Free
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- 3 MONTH -->
+
+            <article class="pricing-card pink-card">
+
+                <span class="popular-tag">
+                    MOST POPULAR
+                </span>
+
+                <span class="border-light"></span>
+
+                <div class="card-content">
+
+                    <div class="plan-icon">
+                        👑
+                    </div>
+
+                    <h3>Pro Plan</h3>
+
+                    <p class="plan-duration">
+                        3 Months
+                    </p>
+
+                    <div class="price-box">
+
+                        <h1>$49</h1>
+
+                        <span>$16.3 / Month</span>
+
+                    </div>
+
+                    <ul class="feature-list">
+
+                        <li><i class="fa-solid fa-circle-check"></i> Unlimited AI Stories</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Full Character & Episode Management</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Emotion Engine Pro</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Halal DAF Audio Export</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> HD Motion Video Export</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Email Support</li>
+
+                    </ul>
+
+                    <a href="#" class="pricing-btn">
+                        Choose Plan
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- 6 MONTH -->
+
+            <article class="pricing-card green-card">
+
+                <span class="border-light"></span>
+
+                <div class="card-content">
+
+                    <div class="plan-icon">
+                        ⚡
+                    </div>
+
+                    <h3>Pro Plan</h3>
+
+                    <p class="plan-duration">
+                        6 Months
+                    </p>
+
+                    <div class="price-box">
+
+                        <h1>$89</h1>
+
+                        <span>$14.8 / Month</span>
+
+                    </div>
+
+                    <ul class="feature-list">
+
+                        <li><i class="fa-solid fa-circle-check"></i> Everything in Pro 3 Months</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Motion Control Video Engine</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Faster Video Rendering</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Advanced DAF Rhythm Patterns</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Priority Support</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Cloud Episode Storage</li>
+
+                    </ul>
+
+                    <a href="#" class="pricing-btn">
+                        Choose Plan
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- 12 MONTH -->
+
+            <article class="pricing-card gold-card">
+
+                <span class="border-light"></span>
+
+                <div class="card-content">
+
+                    <div class="plan-icon">
+                        💎
+                    </div>
+
+                    <h3>Ultimate Plan</h3>
+
+                    <p class="plan-duration">
+                        12 Months
+                    </p>
+
+                    <div class="price-box">
+
+                        <h1>$149</h1>
+
+                        <span>Best Value</span>
+
+                    </div>
+
+                    <ul class="feature-list">
+
+                        <li><i class="fa-solid fa-circle-check"></i> Full Platform Access</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Unlimited Motion Video Generation</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Ultra Emotion Engine</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> VIP Support</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Early Feature Access</li>
+
+                        <li><i class="fa-solid fa-circle-check"></i> Lifetime Updates</li>
+
+                    </ul>
+
+                    <a href="#" class="pricing-btn">
+                        Get Ultimate
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!-- 12 CONTACT SECTION -->
+<section class="contact-section neon-animate" id="contact">
+  <div class="section-bg-orb orb-1"></div>
+  <div class="section-bg-orb orb-2"></div>
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-badge contact-badge">Support & Inquiries</span>
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-subtitle">Have questions about AI Cartoon Story Studio? We're here to help with support, partnerships, and platform inquiries.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <div class="card p-4 contact-form-card">
+          <h4 class="mb-4 contact-card-title">Send us a Message</h4>
+          
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="Your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" id="contactSubject" placeholder="Message subject" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-md-6">
+        <div class="card p-4 contact-form-card h-100">
+          <h4 class="mb-4 contact-card-title">Get in Touch</h4>
+
+          <div class="mb-4">
+            <h6 class="contact-label">Email</h6>
+            <p><a href="mailto:support@suzudreamtoon.com">support@suzudreamtoon.com</a></p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="contact-label">Phone</h6>
+            <p>+1 (555) 123-4567</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="contact-label">Address</h6>
+            <p>123 Creative Street<br>Innovation City, IC 12345<br>Country</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="contact-label">Business Hours</h6>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+          </div>
+
+           <div>
+            <h6 class="contact-label">Follow Us</h6>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@wigglyland.worlds" target="_blank" rel="noopener noreferrer" aria-label="YouTube — Wigglyland">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="https://www.tiktok.com/@wigglyland.world" target="_blank" rel="noopener noreferrer" aria-label="TikTok — Wigglyland" class="social-tiktok">
+                    <span>Tk</span>
+                </a>
+                <a href="https://www.snapchat.com/add/wigglyland?share_id=eQl5Rsr7L3c&locale=en-US" target="_blank" rel="noopener noreferrer" aria-label="Snapchat — Wigglyland">
+                    <i class="fa fa-snapchat-ghost"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1WYbpFJFJB/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — Wiggly Land">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/wigglyland.official?igsh=N3pkMzk1c3ZhdDNw" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Wigglyland Official">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider-line py-1"></div>
+
+<!-- BLOG ARTICLE MODAL -->
+<div class="modal fade blog-modal" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="blog-modal-tag" id="blogModalTag">AI Storytelling</span>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 id="blogModalTitle">Article Title</h3>
+        <p id="blogModalBody"></p>
+        <a href="register.html" class="btn btn-primary mt-3" id="blogModalCta">Start Creating Free →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 SuZu DreamToon AI. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="assets/js/workflow.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<script src="assets/js/emotion-engine.js"></script>
+<script src="assets/js/blog.js"></script>
+
+</body>
+</html>

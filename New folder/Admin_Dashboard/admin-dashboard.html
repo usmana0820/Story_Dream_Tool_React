@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | SuZu DreamToon AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../index.html">
+      <span style="color:#B03E00;">SuZu</span>
+      <span style="color:#D65F73;">DreamToon</span>
+      <span style="color:#7BA276;">AI</span>
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../features.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="../login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="../register.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+
+      <div class="ms-3">
+        <a href="../User_Dashboard/user-dashboard.html" class="btn btn-primary btn-sm">User Dashboard</a>
+        <a class="btn btn-secondary btn-sm">Admin</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ADMIN DASHBOARD -->
+<div class="container-fluid py-4">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <h1 style="color:#D65F73;">Admin Dashboard</h1>
+        <p class="text-muted">Manage users, content, and system settings</p>
+      </div>
+      <div class="col-md-4 text-end">
+        <button class="btn btn-danger">Logout</button>
+      </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-3">
+        <div class="card p-4 text-center" style="border-left: 4px solid #D65F73;">
+          <h6 class="text-muted">Total Users</h6>
+          <h2 style="color:#D65F73;">1,245</h2>
+          <small class="text-success">+12% this month</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center" style="border-left: 4px solid #B03E00;">
+          <h6 class="text-muted">Active Projects</h6>
+          <h2 style="color:#B03E00;">856</h2>
+          <small class="text-success">+8% this month</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center" style="border-left: 4px solid #CD5EA7;">
+          <h6 class="text-muted">Generated Stories</h6>
+          <h2 style="color:#CD5EA7;">3,421</h2>
+          <small class="text-success">+24% this month</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center" style="border-left: 4px solid #7BA276;">
+          <h6 class="text-muted">System Health</h6>
+          <h2 style="color:#7BA276;">98%</h2>
+          <small class="text-success">All systems operational</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Management Sections -->
+    <div class="row g-4 mb-5">
+      <!-- User Management -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 style="color:#D65F73;">User Management</h5>
+          <p class="text-muted">Control user accounts and permissions</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">View All Users</a>
+            <a href="#" class="list-group-item list-group-item-action">Ban/Suspend Users</a>
+            <a href="#" class="list-group-item list-group-item-action">User Verification</a>
+            <a href="#" class="list-group-item list-group-item-action">Role Management</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Moderation -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 style="color:#B03E00;">Content Moderation</h5>
+          <p class="text-muted">Review and manage user-generated content</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Pending Reviews</a>
+            <a href="#" class="list-group-item list-group-item-action">Reported Content</a>
+            <a href="#" class="list-group-item list-group-item-action">Community Guidelines</a>
+            <a href="#" class="list-group-item list-group-item-action">Flagged Stories</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Management -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 style="color:#CD5EA7;">System Settings</h5>
+          <p class="text-muted">Configure system preferences and features</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">General Settings</a>
+            <a href="#" class="list-group-item list-group-item-action">Feature Toggle</a>
+            <a href="#" class="list-group-item list-group-item-action">Maintenance Mode</a>
+            <a href="#" class="list-group-item list-group-item-action">API Configuration</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analytics -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 style="color:#7BA276;">Analytics & Reports</h5>
+          <p class="text-muted">View usage statistics and system reports</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Usage Statistics</a>
+            <a href="#" class="list-group-item list-group-item-action">Performance Metrics</a>
+            <a href="#" class="list-group-item list-group-item-action">System Logs</a>
+            <a href="#" class="list-group-item list-group-item-action">Export Reports</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="card p-4 mb-5">
+      <h5 style="color:#D65F73;" class="mb-4">Recent Activity</h5>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead style="background:#FFF8F6;">
+            <tr>
+              <th>User</th>
+              <th>Activity</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Created new story</td>
+              <td>Today, 2:30 PM</td>
+              <td><span class="badge bg-success">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Sarah Smith</td>
+              <td>Uploaded character design</td>
+              <td>Today, 1:15 PM</td>
+              <td><span class="badge bg-warning">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>Generated audio</td>
+              <td>Today, 11:45 AM</td>
+              <td><span class="badge bg-success">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Emma Brown</td>
+              <td>Updated profile</td>
+              <td>Yesterday, 4:20 PM</td>
+              <td><span class="badge bg-success">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+  <p>© 2026 SuZu DreamToon AI. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
